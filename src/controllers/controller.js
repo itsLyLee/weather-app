@@ -10,7 +10,9 @@ exports.getWeather = (req, res) => {
     const city = req.body.city
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
     axios.get(url).then((response) => {
-        console.log(`It is currently ${response.data.main.temp} in $ {response.data.name}.`)
+        res.render("index", {
+            weather: `It is currently ${response.data.main.temp} in ${response.data.name}.`
+        })
     }).catch((error) => {
        console.log(error) 
     })
