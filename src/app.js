@@ -9,13 +9,13 @@ app.set("views", "views")
 app.set("view engine", "hbs") 
 
 app.get("/", (req, res) => {
-   res.send("My first expess web page!!!!")
+   res.render("index")
 })
 
 
 
 app.get("/about", (req, res) => {
-    res.send("My business is so cool!!!")
+    res.render("about")
 
 })
 
