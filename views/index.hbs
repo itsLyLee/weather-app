@@ -8,9 +8,26 @@
     <title>Weather | Home</title>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg') no-repeat;
+        background-size: 100%;
+        
+      }
+      .header-container{
+        color: whitesmoke;
+      }
+      .header-container h1 {
+        font-weight: 900;
+      }
+
+      .header-container p {
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center main">
-          <div>
+          <div class="header-container">
             <h1 class="mt-5">Weather Finder</h1>
             <p class="lead">Enter the name of the city and press search!</p>
           </div>
